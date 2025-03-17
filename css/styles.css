@@ -1,0 +1,1219 @@
+/* Body, Footer, NavBar, Carousel, Hero*/
+
+    html, body {
+    height: 100%;
+    background-color: white;
+    scroll-behavior: smooth;
+    }
+
+    .navbar {
+    background: linear-gradient(to bottom, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;  
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    }
+
+    .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: white;
+    font-size: larger;
+    }
+  
+    .carousel-caption h3 {
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    }
+
+    .carousel-item {
+    height: 60rem;
+    }
+
+    .carousel-item > img {
+    position: contain;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 60rem;
+    }
+
+    .carousel-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1050;
+    }
+    
+    .carousel-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carousel-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+
+    .hero {
+    background: linear-gradient(to bottom, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    max-width: 3000px;
+    }
+  
+    .hero-overlay {
+    max-width: 1500px;
+    margin: auto;
+    }
+
+    .hero-overlay p {
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+    line-height: 1.8;
+    }
+
+    .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:plum;
+    margin-bottom: 30px;
+    }
+  
+    .hero p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    }
+
+    .footer {
+    background: linear-gradient(to bottom, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;  
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    }
+
+    .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 2000px;
+    margin: 0 auto;
+    width: 100%;
+    }
+
+    .footer-section {
+    flex: 1;
+    min-width: 280px; 
+    margin: 10px;
+    text-align: center;
+    }
+
+    .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    }
+
+    .footer-section p,
+    .footer-section a {
+    font-size: 1rem;
+    color: #4a2849;
+    text-decoration: none;
+    }
+
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    }
+
+    .links-grid ul {
+    padding: 0;
+    }
+
+    .links-grid li {
+    margin: 8px 0;
+    }
+
+    .links-grid a {
+    color: #4a2849;
+    transition: color 0.3s;
+    }
+
+    .links-grid a:hover {
+    color: #a259a0;
+    }
+
+    .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: black;
+    transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+    color: #a259a0;
+    }
+
+    .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(74, 40, 73, 0.2);
+    margin-top: 20px;
+    padding-top: 10px;
+    }
+
+    .footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+    }
+
+
+/* Home page */
+    .intro-section {
+    padding: 0px 80px 0px 80px;
+    max-width: 1700px;
+     }
+
+    .intro-text {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    }
+
+    .intro-image {
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .intro-image:hover {
+    transform: scale(1.05); 
+    }
+
+    @media (max-width: 768px) {
+    .intro-heading {
+    font-size: 2rem;
+    }
+    .intro-text {
+    font-size: 1rem;
+    }
+    }
+
+    .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    }
+    
+    .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    }
+
+    .featurette {
+    margin-bottom: 3rem; 
+    }
+
+    .featurette-heading {
+    font-size: 2.0rem;
+    color: plum;
+    margin-bottom: 20px; 
+    }
+
+    .featurette-paragraph { 
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    }
+
+    .lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    }
+
+    .featurette img {
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    .challenge-row {
+    padding:0px 50px 0px 50px;
+    }
+
+    .challenge-row h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    margin-top: 30px;
+    }
+
+    .challenge-paragraph {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    }
+
+    .transition-section h2 {
+    font-size: 2.5rem;
+    color: plum;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    }
+
+    .circle-section {
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;
+    text-align: center;
+    margin-top: 70px; 
+    padding: 0px 50px 0px 50px;  
+    }
+
+    .circle-section h2 {
+    font-size: 2.0rem;
+    color: plum;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+    .transition-section p {
+    font-size: 1.2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: black;
+    line-height: 1.8;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    }
+
+
+/* About Page */
+    .about, .mission {
+    padding: 30px 20px;
+    text-align: center;
+    }
+
+    .about .container, .mission .container {
+    max-width: 900px;
+    margin: auto;
+    }
+
+    .about .container h2, .mission .container h2 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: plum;
+    }
+
+    .values {
+    background: white;
+    padding: 20px 20px;
+    text-align: center;
+    }
+
+    .values .container {
+    max-width: 1500px;
+    margin: auto;
+    }
+
+    .values h2 {
+    font-size: 2.5rem;
+    color: plum;
+    margin-bottom: 10px;
+    }
+
+    .values-intro {
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify; 
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #5a3d5c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+    .values-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .value-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px 0;
+    border-left: 5px solid #a259a0;
+    background: rgba(162, 89, 160, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .value-block.right {
+    justify-content: flex-end;
+    text-align: right;
+    border-left: none;
+    border-right: 5px solid #a259a0;
+    }
+
+    .value-text {
+    max-width: 1500px;
+    padding: 20px 20px;
+    }
+
+    .value-block:hover {
+    transform: scale(1.02);
+    }
+
+    .value-text h3 {
+    font-size: 1.8rem;
+    color: #5a3d5c;
+    margin-bottom: 10px;
+    }
+
+    .value-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+    .value-block, .value-block.right {
+    justify-content: center;
+    text-align: left;
+    border-left: 5px solid #a259a0;
+    border-right: none;
+    }
+    }
+
+    .what-we-do {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+    .what-we-do .container {
+    max-width: 2000px; 
+    margin: auto;
+    }
+
+    .what-we-do h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+
+    .programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center; 
+    }
+
+    .program-card {
+    background: linear-gradient(to right, #f5a9c6, #d991ba);
+    padding: 25px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .program-card:hover {
+    transform: translateY(-5px);
+    }
+
+    .program-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    }
+
+    .program-card p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    }
+
+    .impact {
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    }
+
+    .impact .container {
+    max-width: 900px;
+    margin: auto;
+    }
+
+    .impact h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+
+    .impact p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify; 
+    line-height: 1.8;
+    }
+
+/* Mission Page */
+    .mission-col {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0px 50px 0px 50px;
+    }
+
+    .mission-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    border-left: 6px solid #a64d79;
+    width: 600px;
+    }
+
+    .mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .mission-card h2 {
+    color: plum;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    }
+
+    .mission-card p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    }
+
+    @media (max-width: 992px) {
+    .row-cols-lg-3 {
+    row-gap: 20px;
+    }
+    }
+
+    #mission-img {
+    padding-left: 50px;
+    }
+
+    .her-container {
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #her-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: plum;
+    margin-bottom: 20px;
+    }
+
+    #her-intro, #her-mission, #her-action, #her-closing {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    }
+
+    #her-highlight {
+    font-weight: bold;
+    color: #e99bde;
+    }
+
+    #her-list {
+    list-style-type: square;
+    padding-left: 20px;
+    }
+
+    #her-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    }
+
+    .mission-row{
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+
+    .mission-img{
+    padding-top: 20px;
+    padding-left: 50px;
+    }
+
+    .changing-perceptions { 
+    background-image: url(../images/Women1.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    position: relative;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    }
+  
+    .changing-perceptions::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    }
+  
+    .changing-perceptions .container-fluid {
+    position: relative;
+    z-index: 2;
+    padding: 0 15px;
+    }
+  
+    .initiatives {
+    margin-top: 2rem;
+    }
+  
+    .initiative h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5a9c6;
+    margin-top: 20px;
+    }
+  
+    .initiative p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: white;
+    padding-right: 40px;
+    }
+
+    @media (min-width: 768px) {
+    .initiatives {
+    grid-template-columns: 1fr 1fr;
+    }
+    }
+  
+    @media (min-width: 1024px) {
+    .initiatives {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    }
+  
+    .movement {
+    color: black;
+    text-align: center;
+    padding: 50px 80px 50px 80px;
+    }
+
+    .movement h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+    
+    .movement p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify; 
+    line-height: 2;
+    }
+
+    .impacts {
+    font-size: 2.0rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+
+    .joinher {
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;
+    text-align: center;  
+    }
+    
+    .joinher h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+     
+    .joinher h3 {
+    font-size: 2.0rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+
+    .joinher p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.8;
+    }
+
+    .involve-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+        
+    .involve-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+        
+    .involve-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+
+
+    /* Programs Page */
+    .program-list {
+    list-style-type: square;
+    padding-left: 20px;
+    }
+        
+    .program-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    }   
+
+    .programs h2{
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+
+
+    /* Collaboration Page */
+    .collaboration-section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    }
+ 
+    .collaboration-section .container {
+    max-width: 1500px;
+    width: 100%;
+    position: relative;
+    }
+
+    .collaboration-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    }
+    
+    .collaboration-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    }
+    
+    .collaboration-text {
+    position: absolute;
+    right: 0;
+    background: white;
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: translateX(-10%); 
+    }
+    
+    .collaboration-text h2 {
+    font-size: 2.0rem;
+    color: plum; 
+    margin-bottom: 10px;
+    }
+    
+    .collaboration-text p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+    }
+    
+    .collaborate-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    .collaborate-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .collaborate-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+   
+    @media (max-width: 768px) {
+    .collaboration-text {
+    width: 80%;
+    transform: translateX(0);
+    position: relative;
+    margin-top: -50px;
+    }
+    }
+
+    .partnership {
+    text-align: center;
+    }
+    
+    .partnership h2 {
+    font-size: 2.5rem;
+    color: plum; 
+    margin-bottom: 20px;
+    }
+    
+    .partnership p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    max-width: 1500px;
+    margin: 0 auto 40px;
+    }
+    
+    #impacts h2 {
+    color: plum;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+    }
+
+    .partner-section {
+    justify-content: center;
+    gap: 40px;
+    }
+    
+    .partner-section .col-lg-4 {
+    background: linear-gradient(to bottom, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .partner-section .col-lg-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .partner-section img {
+    border: 4px solid plum; 
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    }
+    
+    .partner-section .col-lg-3:hover img {
+    transform: scale(1.1);
+    }
+    
+    .partner-section h2 {
+    font-size: 1.5rem;
+    color: plum;
+    margin-top: 15px;
+    }
+    
+    .partner-section .featurette-paragraph {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    max-width: 1500px;
+    margin: 0 auto 40px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+    .partner-section {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .partner-section .col-lg-3 {
+    width: 80%;
+    margin-bottom: 20px;
+    }
+    }
+    
+    .partner-section .col-lg-3 {
+    width: 100%;
+    }
+    
+    
+    .partner-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .partner-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .partner-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+
+    .partner-form {
+    height: 400px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 80px;
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    }
+       
+    .partner-form p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    max-width: 1500px;
+    margin: 0 auto 40px;
+    }
+
+    .partner-form h2 {
+    color: plum;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;   
+    }
+
+    .partners-card {
+    margin-left: 50px;
+    border-radius: 10px;
+    }
+    
+    #partners-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    }s
+        
+    #partners-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+    }
+        
+    #partners-form .form-control:focus {
+    border-color: plum;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+    }
+
+    /* Contact Us */
+    .guide {
+    padding-left: 80px;
+    padding-right: 80px;
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    }
+
+    .guide h2 {
+    font-size: 2.5rem;
+    color: plum;
+    margin-bottom: 20px; 
+    }
+
+    .guide h3 {
+    font-size: 1.5rem;
+    color: plum;
+    margin-bottom: 20px;  
+    }
+
+    .guide p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    max-width: 1500px;
+    margin: 0 auto 40px;
+    }
+    
+    .contact-form {
+    max-width: 850px;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    }
+    
+    .contact-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    }
+    
+    .contact-form .form-control,  
+    .contact-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+    }
+    
+    .contact-form .form-control:focus,  
+    .contact-form select:focus {
+    border-color: plum;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+    }
+    
+    .contact-form p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    }
+    
+    .donation-button {
+    position: fixed;
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    bottom: 300px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 1050;
+    }
+
+    .donation-button:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .donation-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+
+    #donationForm .form-control:focus {
+    border-color: plum;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+    }
+
+    #donationForm label {
+    font-weight: 600;
+    margin-bottom: 5px;   
+    }
+
+    .donation-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);  
+    }
+
+    .donation-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+        
+    .donation-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+    
+    .modal-header {
+    background: linear-gradient(to top, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    color: black;  
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+
+    /* Login Page */
+    .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(247, 198, 232, 0.7), rgba(253, 253, 253, 0.2));
+    font-family: Arial, sans-serif;
+    }
+
+    .auth-login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    }
+
+    .auth-title {
+    margin-bottom: 20px;
+    color: plum;
+    }
+
+    .auth-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+
+    .auth-input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    }
+
+    .auth-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    }
+
+    .auth-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray; 
+    transition: 0.3s ease-in-out; 
+    }
+    
+    .auth-input:focus {
+    border-color: plum; 
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+    outline: none; 
+    }
+    
+    .auth-btn {
+    background: linear-gradient(135deg, #f8bbda, #f377d0);
+    color: #fff; 
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1050;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    }
+
+    .auth-btn:hover {
+    background: linear-gradient(135deg, #f377d0, #d63384); 
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .auth-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(214, 51, 132, 0.8);
+    }
+
+    .auth-info-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+    }
